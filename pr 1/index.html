@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Практична робота №1 — Карта зображень та таблиця</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #001f3f, #003366);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00ccff;
+    }
+
+    img {
+      margin: 20px 0;
+      border: 3px solid #00ccff;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-spacing: 0; 
+      width: 70%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    caption {
+      background-color: #00ccff;
+      color: white;
+      font-weight: bold;
+      padding: 5px 0;
+      margin: 0;
+    }
+
+    th, td {
+      border: 1px solid #00ccff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #003366;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Практична робота №1</h1>
+  <h2>Карта зображень — Web-технології</h2>
+
+  <img src="C:\Users\Mirlin\Desktop\pr 1\v2.png" alt="Web-технології" usemap="#webmap" width="400">
+
+  <map name="webmap">
+    <area shape="rect" coords="50,50,200,150" href="https://www.w3schools.com/css/" alt="CSS">
+    <area shape="circle" coords="350,120,60" href="https://developer.mozilla.org/en-US/docs/Web/HTTP" alt="HTTP">
+    <area shape="rect" coords="500,50,650,150" href="https://www.codecademy.com/learn/learn-html" alt="HTML">
+    <area shape="poly" coords="700,100,760,60,820,100,760,140" href="https://www.javascript.com/learn" alt="JavaScript">
+  </map>
+
+  <h2>Таблиця курсів</h2>
+  <table>
+    <caption>Курси з Web-технологій</caption>
+    <tr>
+      <td colspan="3">1</td>
+      <td colspan="3">2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td colspan="3">4</td> 
+      <td colspan="3">5</td> 
+    </tr>
+  </table>
+
+  <p style="margin-top:20px;">© 2025. Виконав: [Mikliush Ostap]</p>
+</body>
+</html>
