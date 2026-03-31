@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета студента</title>
+</head>
+<body>
+  <h1>Анкета студента</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Особиста інформація</legend>
+
+      <label>Full Name: <input type="text" name="fullname" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Password: <input type="password" name="password" required></label><br>
+      <label>Age: <input type="number" name="age" min="10" max="100"></label><br>
+      <label>Date of Birth: <input type="date" name="dob"></label><br>
+      <label>Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Навички та уподобання</legend>
+
+      <label>Languages Known:
+        <input type="checkbox" name="lang" value="english"> English
+        <input type="checkbox" name="lang" value="spanish"> Spanish
+        <input type="checkbox" name="lang" value="french"> French
+      </label><br>
+
+      <label>Country:
+        <select name="country">
+          <option>Ukraine</option>
+          <option>Poland</option>
+          <option>Germany</option>
+        </select>
+      </label><br>
+
+      <label>College Subjects:
+        <select name="subjects" multiple>
+          <option>Mathematics</option>
+          <option>Computer Science</option>
+          <option>Physics</option>
+          <option>Chemistry</option>
+          <option>English</option>
+        </select>
+      </label><br>
+
+      <label>Rate Interest in Computer Science:
+        <input type="range" name="interest" min="0" max="10">
+      </label><br>
+
+      <label>Describe Skills:</label><br>
+      <textarea name="skills" rows="4" cols="40"></textarea><br>
+
+      <label>Upload Resume: <input type="file" name="resume"></label><br>
+      <label>Pick Favorite Color: <input type="color" name="color"></label><br>
+      <label>Preferred Study Time: <input type="time" name="study_time"></label><br>
+    </fieldset>
+
+    <input type="submit" value="Submit Survey">
+  </form>
+</body>
+</html>
